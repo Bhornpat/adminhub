@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",              // รองรับ async/await และ modern JS
+    "module": "commonjs",            // สำหรับ Node.js + Express
+    "rootDir": "./src",              // ชี้ไปที่โฟลเดอร์ src
+    "outDir": "./dist",              // ไฟล์ output จะไปไว้ที่ dist
+    "esModuleInterop": true,         // รองรับการ import default จาก commonjs module
+    "strict": true,                  // เปิดโหมด strict ตรวจพลาดครบ
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
